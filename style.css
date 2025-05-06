@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background: #f2f4f8;
+  color: #333;
+}
+
+header {
+  background: #4b6cb7;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeIn 1s ease-in;
+}
+
+.skill {
+  margin: 20px 0;
+}
+
+.skill p {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 30px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #6C63FF, #FF6B6B);
+  transition: width 2s ease;
+  border-radius: 30px;
+}
+
+ul {
+  list-style: disc inside;
+  margin-top: 20px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+/* Background Animation */
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(-45deg, #6C63FF, #FF6B6B, #FFD700, #6C63FF);
+  background-size: 600% 600%;
+  z-index: -1;
+  animation: bgMove 15s ease infinite;
+}
+
+@keyframes bgMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
